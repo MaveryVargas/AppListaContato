@@ -2,17 +2,121 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Form1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/yellow"
+    android:background="#000000"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginTop="406dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="60dp"
+        android:text="Salvar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_finalizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.145" />
+
+    <Button
+        android:id="@+id/btn_limpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="406dp"
+        android:layout_marginEnd="344dp"
+        android:layout_marginBottom="60dp"
+        android:text="Limpar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_finalizar"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <EditText
+        android:id="@+id/Box_contato"
+        android:layout_width="422dp"
+        android:layout_height="63dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="contato"
+        android:inputType="text"
+        android:text="Telefone de contato"
+        android:textColor="#EFECEC"
+        android:textColorHighlight="#681AF1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_email" />
+
+    <TextView
+        android:id="@+id/lbl_titulo"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:includeFontPadding="false"
+        android:text="App Agenda"
+        android:textColor="#FBF7F7"
+        android:textSize="48sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <EditText
+        android:id="@+id/box_name"
+        android:layout_width="422dp"
+        android:layout_height="63dp"
+        android:layout_margin="16dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="text"
+        android:text="Nome"
+        android:textColor="#EFECEC"
+        android:textColorHighlight="#681AF1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_titulo" />
+
+    <EditText
+        android:id="@+id/box_email"
+        android:layout_width="422dp"
+        android:layout_height="63dp"
+        android:layout_margin="16dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="text"
+        android:text="email"
+        android:textColor="#EFECEC"
+        android:textColorHighlight="#681AF1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_name" />
+
+    <Button
+        android:id="@+id/btn_finalizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="853dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="852dp"
+        android:text="Finalizar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
